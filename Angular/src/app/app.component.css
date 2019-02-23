@@ -1,3 +1,31 @@
 ul {
   text-align: center;
 }
+
+.spinner {
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+  top:10%;
+  left:50%;
+  position:absolute;
+}
+.spinner:after {
+  content: " ";
+  display: block;
+  width: 46px;
+  height: 46px;
+  margin: 1px;
+  border-radius: 50%;
+  border: 5px solid #19ffa5;
+  border-color: #19ffa5 transparent #19ffa5 transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
