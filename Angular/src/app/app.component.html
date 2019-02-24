@@ -1,5 +1,7 @@
 <!-- The content below is only a placeholder and can be replaced. -->
+<app-header></app-header>
 <app-home></app-home>
+
 <router-outlet></router-outlet>
-<div *ngIf="showLoadingIndicator" class="spinner">Loading...</div>
-<a [routerLink]="'/accounts'"> Accounts </a>
+<div *ngIf="showLoadingIndicator" class="spinner"></div>
+<a [routerLink]="'/'"> Accounts </a>

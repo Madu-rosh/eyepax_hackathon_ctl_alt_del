@@ -8,9 +8,10 @@ import { LoginComponentComponent } from './login-component/login-component.compo
 import { PostComponentComponent } from './post-component/post-component.component';
 import { CommentComponentComponent } from './comment-component/comment-component.component';
 import { AppRoutingModule } from './/app-routing.module';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, LoginComponentComponent, PostComponentComponent, CommentComponentComponent],
+  declarations: [AppComponent, HomeComponent, LoginComponentComponent, PostComponentComponent, CommentComponentComponent, HeaderComponent],
   imports: [BrowserModule, AppRoutingModule,HttpClientModule],
   providers: [],
   bootstrap: [AppComponent]
