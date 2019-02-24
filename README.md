@@ -8,6 +8,7 @@ React and Angular projects are in seperate folders
 the changes so far done has built to these links
 
 Angular: https://madu-rosh.github.io/angular/
+
 React : https://madu-rosh.github.io/react/
 
 #important details
