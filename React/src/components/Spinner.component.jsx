@@ -46,16 +46,16 @@ export class SpinnerComponent extends React.Component {
     }      
     
     render() {
-        let divStyle = { display: 'inline-block' };
         if (this.state.show) {
-            const { loadingImage } = this.props;
             return (
-            <div style={divStyle}>
+                <div style={divStyle}>
                 { loadingImage && <img src={loadingImage} /> }
                 { this.props.children }
-            </div>
+                </div>
             );
         }
         return (<div style={divStyle}></div>);
     }
 }
+const spinnerComponent = new SpinnerComponent();  
+export { spinnerComponent }  
