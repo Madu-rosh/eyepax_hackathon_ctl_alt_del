@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import Main from "./Main";
+import Post_view from "./Post_view";
 
 import "./styles.css";
 
@@ -11,7 +12,7 @@ function App() {
       {/* <h1>Eyepax JavaScript Hackathon</h1> */}
       <Router>
         <Route exact path='/' component={Main} />
-        <Route path='/rant/{rant_id}' component={Comment} />
+        <Route exact path='/rant/{rant_id}' component={Post_view} />
       </Router>
     </div>
   );
