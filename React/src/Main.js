@@ -6,6 +6,7 @@ import {
   HashRouter
 } from "react-router-dom";
 import axios from 'axios';
+import Login from "./components/login"
 import Post_list from "./Post_list";
  
 class Main extends Component {
@@ -68,6 +69,12 @@ class Main extends Component {
       .catch(error => console.log(error));
   }
   render() {
+    const LoginMenu = () => {
+      return (<div className="join">
+          <span>Join</span>
+          <span>Sign Out</span>
+      </div>);
+    }
     const posts = this.state.posts.map((content, index) => {
       return <Post_list key={index} content={content} number={index + 1}/>
     });
@@ -88,10 +95,7 @@ class Main extends Component {
                 </div>
                 
   
-                <div className="join">
-                    <span>Join</span>
-                    <span>Sign Out</span>
-                </div>
+                <LoginMenu/>
             </div>
           </section>
           <section className="main layout--center">
@@ -103,8 +107,9 @@ class Main extends Component {
               </spinnerComponent>  
               <div className="post-list">{posts}</div>
             </div>
-          </section>       
-        </div>      
+          </section>   
+          <Login/>    
+        </div>              
       );   
   }
 }
